@@ -2,8 +2,7 @@
 $username=$_POST['username'];
 $password=$_POST['password'];
 include('connect.php');
-$row = $result -> fetch_array(MYSQLI_ASSOC);
-
+$row = $result -> fetch_array(MYSQLI_ASSOC);//哪種類型的數值
 
 if(!$row){
     echo "錯誤";
